@@ -1,0 +1,31 @@
+.sketch {
+    height: 80vh;
+    width: 80vw;
+    border-radius: 3%;
+    border: 2px solid greenyellow;
+    padding-left: 3%;
+    padding-top: 3%;
+    padding-right: 3%;
+}
+
+.settings {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 33%;
+}
+
+.setting {
+    display: flex;
+    justify-content: space-between;
+    gap: 3%;
+}
+
+.setting>button {
+    border-radius: 20%;
+}
+
+.board {
+    height: 80%;
+    border: 2px solid black;
+}
