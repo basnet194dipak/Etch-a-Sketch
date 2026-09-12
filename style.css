@@ -26,6 +26,19 @@
 }
 
 .board {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     height: 80%;
     border: 2px solid black;
+}
+
+.row {
+    display: flex;
+    flex: 1;
+}
+
+.column {
+    flex: 1;
+    /* border: 2px solid blue; */
 }

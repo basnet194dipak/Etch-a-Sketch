@@ -11,6 +11,16 @@ function build_board(n) {
         for (let j = 0; j < n; j++) {
             const column = document.createElement("div")
             column.setAttribute("class", "column")
+
+            // add hovering effects
+            column.addEventListener("mouseover", () => {
+                column.setAttribute("style", "background-color: #0da748;")
+            })
+
+            // column.addEventListener("mouseout", () => {
+            //     column.setAttribute("style", "background-color: #0805bd;")
+            // })
+
             row.appendChild(column)
         }
         board.appendChild(row)
@@ -32,5 +42,11 @@ custom_grid.addEventListener("click", () => {
     if (grid_num < 0 || grid_num > 100) {
         grid_num = 16
     }
-    build_board(grid_num)
+    build_board(n)
+})
+
+
+let reset = document.querySelector("#reset")
+reset.addEventListener("click", () => {
+    build_board(n)
 })
