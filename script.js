@@ -17,3 +17,20 @@ function build_board(n) {
     }
 
 }
+
+let defaults = document.querySelector("#default")
+defaults.addEventListener("click", () => {
+    n = 16
+    build_board(n)
+})
+
+let custom_grid = document.querySelector("#customize_grid")
+custom_grid.addEventListener("click", () => {
+    let grid_num = prompt("Please Enter the grid size")
+    grid_num = Number(grid_num)
+    n = grid_num
+    if (grid_num < 0 || grid_num > 100) {
+        grid_num = 16
+    }
+    build_board(grid_num)
+})
