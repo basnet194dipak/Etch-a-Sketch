@@ -39,8 +39,9 @@ custom_grid.addEventListener("click", () => {
     let grid_num = prompt("Please Enter the grid size")
     grid_num = Number(grid_num)
     n = grid_num
-    if (grid_num < 0 || grid_num > 100) {
-        grid_num = 16
+    if (grid_num < 1 || grid_num > 100) {
+        alert("Custom grid must be minimum of 1 and maximum of 100")
+        n = 16
     }
     build_board(n)
 })
@@ -50,3 +51,7 @@ let reset = document.querySelector("#reset")
 reset.addEventListener("click", () => {
     build_board(n)
 })
+
+document.addEventListener("DOMContentLoaded", () => {
+    build_board(16)
+})  
