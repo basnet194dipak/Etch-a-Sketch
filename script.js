@@ -17,9 +17,9 @@ function build_board(n) {
                 column.setAttribute("style", "background-color: #0da748;")
             })
 
-            // column.addEventListener("mouseout", () => {
-            //     column.setAttribute("style", "background-color: #0805bd;")
-            // })
+            column.addEventListener("mouseout", () => {
+                column.setAttribute("style", "background-color: #0805bd;")
+            })
 
             row.appendChild(column)
         }

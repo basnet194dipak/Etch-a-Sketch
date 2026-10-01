@@ -29,6 +29,7 @@ body {
     /* gap: 33%; */
     border-bottom: 2px solid black;
     padding-bottom: 2%;
+    padding-right: 12%;
 }
 
 .setting {
@@ -44,6 +45,9 @@ body {
     border-bottom-right-radius: 8px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+    background-color:white;
+    padding-left: 12%;
+    padding-right: 12%;
 }
 
 .board {
@@ -63,5 +67,6 @@ body {
 
 .column {
     flex: 1;
-    /* border: 2px solid blue; */
+    border: 0.1px solid #eeeeee;
 }
+
